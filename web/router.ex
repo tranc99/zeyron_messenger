@@ -17,6 +17,7 @@ defmodule Chatreact.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/rooms", RoomController, only: [:create, :show]
   end
 
   # Other scopes may use custom stacks.
