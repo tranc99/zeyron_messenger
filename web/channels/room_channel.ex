@@ -1,4 +1,4 @@
-def Chatreact.RoomChannel do
+defmodule Chatreact.RoomChannel do
   use Phoenix.Channel
 
   use Timex
